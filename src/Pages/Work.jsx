@@ -9,7 +9,7 @@ export default function Work() {
   return (
     <>
       {/* Section 1 */}
-      <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 sm:px-10 lg:px-20 gap-2 py-10">
+      <div className="flex flex-col lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-20 gap-5 py-10">
         {/* Tabnet */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

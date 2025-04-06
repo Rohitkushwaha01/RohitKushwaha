@@ -26,13 +26,13 @@ export default function Navbar() {
             <div className="flex items-center justify-between px-4 py-3 sm:px-8 sm:hidden">
                 <div className="flex items-center gap-3">
                     <button
-                        className="text-green-100 focus:outline-none"
+                        className="text-amber-400 focus:outline-none"
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
                         {menuOpen ? <X size={26} /> : <Menu size={26} />}
                     </button>
 
-                    <span className="text-white font-bold text-lg">Rohit Kushwaha</span>
+                    <span className="font-bold text-2xl font-acron space-x-2 text-amber-400">Rohit Kushwaha</span>
                 </div>
             </div>
 

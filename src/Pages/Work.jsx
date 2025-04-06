@@ -9,7 +9,7 @@ export default function Work() {
   return (
     <>
       {/* Section 1 */}
-      <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 sm:px-10 lg:px-20 gap-8 py-10">
+      <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 sm:px-10 lg:px-20 gap-2 py-10">
         {/* Tabnet */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -63,14 +63,14 @@ export default function Work() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="flex items-center justify-center min-h-screen px-6 sm:px-10 lg:px-20 py-10"
+        className="flex items-center justify-center px-6 pb-6 sm:px-10 lg:px-20"
       >
         <div className="w-full max-w-5xl bg-amber-200 rounded-3xl overflow-hidden flex flex-col items-center justify-center p-6 gap-6">
           <div className="text-center">
             <h1 className="font-acron text-4xl sm:text-6xl bg-gradient-to-r from-[#101d93] to-[#da19ac] bg-clip-text text-transparent font-bold mb-2">
               SocioCode
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-700">Product</p>
+            <p className="text-2xl sm:text-2xl text-gray-700 font-acron font-bold">Product</p>
           </div>
           <img
             src={SocioCode}

@@ -6,7 +6,7 @@ import { FaEnvelope, FaGithub } from 'react-icons/fa';
 import FiverrLogo from '../assets/fiverrlogo.png';
 import UpworkLogo from '../assets/upworkLogo.png';
 import FreelancerLogo from '../assets/freelancer.png';
-import LinkedInLogo from '../assets/linkedin.png';
+import LinkedInLogo from '../assets/Linkedin.png';
 
 export default function Connect() {
   const [chatOpen, setChatOpen] = useState(false);

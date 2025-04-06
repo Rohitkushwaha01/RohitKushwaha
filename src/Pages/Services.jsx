@@ -3,25 +3,28 @@ import { motion } from "framer-motion";
 import Footer from "../Components/Footer";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Web from "../assets/Web.svg";
+import Ecommerce from "../assets/Ecommerce.svg";    
+import API from "../assets/API.svg";
 
 const services = [
     {
         title: "Web Development",
         description:
             "Every great digital experience starts with a solid foundation. We craft engaging, scalable websites that don't just look good but also perform seamlessly.",
-        image: "src/assets/Web.svg",
+        image: Web,
     },
     {
         title: "E-Commerce",
         description:
             "Turning ideas into revenue—our e-commerce solutions are built to help brands sell more while providing a smooth shopping experience for users.",
-        image: "src/assets/Ecommerce.svg",
+        image: Ecommerce
     },
     {
         title: "Custom APIs",
         description:
             "APIs connect the dots in today's digital world. We create powerful APIs that integrate systems, automate tasks, and unlock new possibilities.",
-        image: "src/assets/API.svg",
+        image: API
     }
 ];
 

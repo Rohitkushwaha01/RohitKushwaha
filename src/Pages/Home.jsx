@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Process from '../Components/Process';
 import ExperienceTimeline from '../Components/ExperienceTimeline';
 import Footer from '../Components/Footer';
+import Rohit from '../assets/Rohit.png';
 
 export default function Home() {
     const titles = ["A Developer👨‍💻", "An Engineer💡", "An Innovator😊"];
@@ -74,7 +75,7 @@ export default function Home() {
                     viewport={{ once: true }}
                 >
                     <img
-                        src="src/assets/IMG20241228075150-removebg-preview (1).png"
+                        src={Rohit}
                         alt="Profile"
                         className="rounded-xl rounded-b-full max-w-[250px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[350px] xl:max-w-[370px] h-auto object-contain"
                     />

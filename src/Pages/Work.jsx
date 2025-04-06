@@ -1,6 +1,9 @@
 import React from 'react';
 import Footer from '../Components/Footer';
 import { motion } from 'framer-motion';
+import Tabnet from '../assets/Tabnet.png';
+import SheetalEng from '../assets/SheetalEng.png';  
+import SocioCode from '../assets/SocioCode.png';
 
 export default function Work() {
   return (
@@ -19,7 +22,7 @@ export default function Work() {
             Tabnet
           </h1>
           <img
-            src="src/assets/Tabnet.png"
+            src={Tabnet}
             alt="Tabnet"
             className="w-full h-auto rounded-2xl"
           />
@@ -37,7 +40,7 @@ export default function Work() {
             Sheetal Engineers
           </h1>
           <img
-            src="src/assets/SheetalEng.png"
+            src={SheetalEng}
             alt="Sheetal Engineers"
             className="w-full h-auto rounded-2xl"
           />
@@ -70,7 +73,7 @@ export default function Work() {
             <p className="text-xl sm:text-2xl text-gray-700">Product</p>
           </div>
           <img
-            src="src/assets/SocioCode.png"
+            src={SocioCode}
             alt="SocioCode"
             className="w-full h-auto rounded-2xl"
           />

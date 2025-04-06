@@ -17,10 +17,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 text-white">Elsewhere</h3>
             <div className="flex flex-col gap-2 text-sm sm:text-base md:text-lg">
-              <Link to="https://www.fiverr.com/rohitkushwaha01?public_mode=true" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Fiverr</Link>
-              <Link to="https://www.upwork.com/freelancers/~012cc0c2bbe5e81168?viewMode=1" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Upwork</Link>
               <Link to="https://www.linkedin.com/in/rohit-kushwaha-88598420a/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LinkedIn</Link>
+              <Link to="https://www.upwork.com/freelancers/~012cc0c2bbe5e81168?viewMode=1" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Upwork</Link>
               <Link to="https://github.com/Rohitkushwaha01" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Github</Link>
+              <Link to="https://www.fiverr.com/rohitkushwaha01?public_mode=true" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Fiverr</Link>
             </div>
           </div>
 
@@ -28,9 +28,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 text-white">Contact</h3>
             <div className="flex flex-col gap-2 text-sm sm:text-base md:text-lg">
-
-              <a href="#" className="hover:text-white text-sm sm:text-base md:text-lg transition">Email</a>
-              <a href="#" className="hover:text-white text-sm sm:text-base md:text-lg transition">Number</a>
+              <Link to="https://wa.me/919503588850" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Message</Link>
+              <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=rohitkushwahac@gmail.com&su=Hello&body=Hey Rohit, I saw your work and wanted to connect." target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Mail</Link>
             </div>
           </div>
         </div>

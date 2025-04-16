@@ -6,7 +6,7 @@ const testimonials = [
   {
     company: "Tabnet",
     quote: "Rohit worked as a Full Stack Developer at Tabnet, where he handled both the backend and some frontend tasks. He provided efficient solutions to improve our systems’ performance and scalability, addressing key challenges with great precision. His work helped ensure our systems run smoothly.",
-    name: "Tabnet Team",
+    name: "Rahul Kalnarayan(CEO & Founder)",
     role: "Client",
   },
   {

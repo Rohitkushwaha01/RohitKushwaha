@@ -7,6 +7,7 @@ import FiverrLogo from '../assets/fiverrlogo.png';
 import UpworkLogo from '../assets/upworkLogo.png';
 import FreelancerLogo from '../assets/freelancer.png';
 import LinkedInLogo from '../assets/Linkedin.png';
+import Quote from '../Components/Quote';
 
 export default function Connect() {
   const cards = [
@@ -88,7 +89,7 @@ export default function Connect() {
         </motion.p>
       </div>
 
-
+      <Quote />
 
 
       {/* Cards */}
@@ -127,32 +128,6 @@ export default function Connect() {
             </div>
           </motion.a>
         ))}
-      </motion.div>
-
-      {/* Let's Talk Card */}
-      <motion.div
-        className="mt-12 flex justify-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="mb-20 relative w-[600px] mx-5 sm:w-[600px] bg-gray-800 text-white rounded-lg shadow-lg p-6 backdrop-blur-md border border-white/10 hover:scale-105 transition-all">
-          <div className="flex flex-col items-center justify-center mb-4">
-            <h3 className="text-2xl font-semibold text-yellow-300">Let's Make Something Amazing!</h3>
-            <p className="mt-2 text-green-200 text-sm sm:text-center">
-              Whether you're looking to collaborate on a project, need advice, or simply want to chat, I'm just a message away! I believe in building great things together.
-            </p>
-          </div>
-          <div className="flex justify-center mt-6">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=rohitkushwahac@gmail.com&su=Hello&body=Hey Rohit, I saw your work and wanted to connect."
-              className="py-3 px-6 bg-yellow-500 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition-all"
-            >
-
-              Get in Touch
-            </a>
-          </div>
-        </div>
       </motion.div>
 
 

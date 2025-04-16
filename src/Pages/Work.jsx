@@ -21,7 +21,7 @@ export default function Work() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Our Work
+          Work
         </motion.h1>
 
         <motion.h2
@@ -39,8 +39,8 @@ export default function Work() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Dive into the projects we've brought to life — from brand sites to
-          custom platforms — and the ideas still in progress.
+          Dive into the projects we've brought to life - from brand sites to
+          custom platforms and the ideas still in progress.
         </motion.p>
       </div>
 
@@ -144,12 +144,12 @@ export default function Work() {
       </div>
 
       {/* Call to Action */}
-      <div className="text-center py-16">
-        <h2 className="text-3xl text-yellow-300 font-bold mb-4">Let’s Build Something Amazing</h2>
-        <p className="text-green-200 mb-6">Have a project in mind or need help improving your online presence?</p>
+      <div className="text-center py-16 mb-10">
+        <h2 className="text-6xl text-yellow-300 font-bold mb-4">Let’s Build Something Amazing</h2>
+        <p className="text-green-200 mb-10 text-xl">Have a project in mind or need help improving your online presence?</p>
         <a
           href="/connect"
-          className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
+          className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition text-xl"
         >
           Connect with Me →
         </a>

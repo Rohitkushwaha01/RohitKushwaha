@@ -104,7 +104,7 @@ export default function Services() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Our Services
+          Services
         </motion.h1>
 
         <motion.h2
@@ -144,7 +144,7 @@ export default function Services() {
             />
 
             <div className="text-left w-full max-w-xl">
-              <h2 className="text-3xl md:text-5xl font-bold text-yellow-300 mb-4">
+              <h2 className="text-3xl md:text-5xl font-acron font-bold text-yellow-300 mb-4">
                 {service.title}
               </h2>
               <p className="text-lg md:text-xl text-green-200 leading-relaxed mb-6">

@@ -18,7 +18,7 @@ export default function ExperienceTimeline() {
           viewport={{ once: true }}
           className={`
             flex flex-col md:flex-row items-center gap-3
-            p-5 bg-[#A7F3D0] text-[#00675b] rounded-2xl shadow-lg
+            p-5 bg-yellow-200 text-[#00675b] rounded-2xl shadow-lg
             w-full sm:w-[90%] md:w-[75%] lg:w-[60%] 
             mb-6
             ${index % 2 === 0 ? 'md:ml-auto' : 'md:mr-auto'}

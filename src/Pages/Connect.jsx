@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Footer from '../Components/Footer';
 import { FaEnvelope, FaGithub } from 'react-icons/fa';
@@ -9,14 +9,12 @@ import FreelancerLogo from '../assets/freelancer.png';
 import LinkedInLogo from '../assets/Linkedin.png';
 
 export default function Connect() {
-  const [chatOpen, setChatOpen] = useState(false);
-
   const cards = [
     {
       label: 'Mail',
       icon: <FaEnvelope size={40} />,
       link: 'https://mail.google.com/mail/?view=cm&fs=1&to=rohitkushwahac@gmail.com&su=Hello&body=Hey Rohit, I saw your work and wanted to connect.'
-    },    
+    },
     {
       label: 'GitHub',
       icon: <FaGithub size={40} />,
@@ -53,22 +51,49 @@ export default function Connect() {
     }),
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-2 w-full text-center mt-10 mb-10 sm:mb-20 font-segoe">
+      {/* Header Section */}
+      <div className="flex flex-col items-center justify-center text-center mt-20 px-4">
         <motion.h1
-          className="font-acron font-bold text-yellow-400 w-[95%] text-center text-6xl sm:text-5xl lg:w-[70%]"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 2 }}
-          exit={{ opacity: 0, y: 10 }}
-          transition={{ duration: 0.6, ease: 'easeInOut' }}
+          className="text-5xl md:text-7xl font-extrabold font-acron text-yellow-200 drop-shadow-xl"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          Connect👨‍💻
+          Connect
         </motion.h1>
+
+        <motion.h2
+          className="text-2xl md:text-4xl font-bold text-yellow-400 mt-4"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Let’s create, collaborate, and grow together.
+        </motion.h2>
+
+        <motion.p
+          className="max-w-4xl text-green-200 text-base md:text-xl mt-6 px-2"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Whether you're looking to hire, team up on a project, or just start a conversation —
+          I'm available on platforms like Fiverr, Upwork, LinkedIn, and more. Let’s make something amazing happen.
+        </motion.p>
       </div>
 
+
+
+
+      {/* Cards */}
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-12 mb-32 w-full max-w-7xl mx-auto"
+        className="mt-20 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-12 mb-28 w-full max-w-7xl mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -83,11 +108,8 @@ export default function Connect() {
             custom={index}
             className={`
               relative flex flex-col items-center text-center justify-center rounded-2xl p-5 min-h-[160px] sm:min-h-[180px]
-              text-white shadow-xl overflow-hidden transition-all hover:scale-105
-              backdrop-blur-md bg-opacity-10 border border-white/20
-              before:absolute before:inset-0 before:rounded-2xl
-              before:bg-gradient-to-r before:from-green-400 before:via-green-200 before:to-green-600
-              before:animate-[gradient-x_6s_ease_infinite] before:bg-[length:200%_200%] before:opacity-30
+              text-white shadow-md overflow-hidden transition-all hover:scale-105
+              backdrop-blur-md bg-gray-900/70 border border-white/10
               z-10
             `}
           >
@@ -101,11 +123,38 @@ export default function Connect() {
                   className="w-14 h-14 mb-2 object-contain rounded-full"
                 />
               )}
-              <span className="mt-2 text-2xl sm:text-center font-semibold text-green-200">{card.label}</span>
+              <span className="mt-2 text-lg sm:text-xl font-semibold text-green-200">{card.label}</span>
             </div>
           </motion.a>
         ))}
       </motion.div>
+
+      {/* Let's Talk Card */}
+      <motion.div
+        className="mt-12 flex justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="mb-20 relative w-[600px] mx-5 sm:w-[600px] bg-gray-800 text-white rounded-lg shadow-lg p-6 backdrop-blur-md border border-white/10 hover:scale-105 transition-all">
+          <div className="flex flex-col items-center justify-center mb-4">
+            <h3 className="text-2xl font-semibold text-yellow-300">Let's Make Something Amazing!</h3>
+            <p className="mt-2 text-green-200 text-sm sm:text-center">
+              Whether you're looking to collaborate on a project, need advice, or simply want to chat, I'm just a message away! I believe in building great things together.
+            </p>
+          </div>
+          <div className="flex justify-center mt-6">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rohitkushwahac@gmail.com&su=Hello&body=Hey Rohit, I saw your work and wanted to connect."
+              className="py-3 px-6 bg-yellow-500 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition-all"
+            >
+
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </motion.div>
+
 
       <Footer />
     </>

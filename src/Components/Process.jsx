@@ -30,7 +30,7 @@ const sections = [
 
 export default function Process() {
   return (
-    <div className=" text-amber-200 w-full px-4 sm:px-8 py-16 rounded-xl mb-30">
+    <div className=" text-yellow-200 w-full px-4 sm:px-8 py-16 rounded-xl mb-30">
       <h1 className="font-acron text-3xl sm:text-5xl text-center mb-16">
         This is how I approach a problem!
       </h1>

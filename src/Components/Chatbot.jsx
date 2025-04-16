@@ -4,18 +4,20 @@ import { motion } from 'framer-motion';
 export default function Chatbot() {
     const [chatOpen, setChatOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { sender: "bot", text: "Hello! I'm Lucy. I'm here to help you with any questions you might have about Rohit's work." },
+        { sender: "bot", text: "Hello! I'm Luccy, Rohit's Bot" },
+        { sender: "bot", text: "I'm here to help you with any questions you might have about Rohit's work." },
         { sender: "bot", text: "How can I help you Today?" },
     ]);
 
-    const options = [
+    const [options, setOptions] = useState([
         "Tell me about Rohit's work",
         "Can we collaborate?",
         "How can I reach you?",
         "Can I get your contact details?",
         "Just saying hello!",
         "Interested in mentorship",
-    ];
+    ]);
+
 
     const responses = {
         "Tell me about Rohit's work": { type: "text", text: "I specialize in web development, UI/UX design, and digital solutions. Please visit my work page to see my projects." },
@@ -32,6 +34,9 @@ export default function Chatbot() {
 
 
     const handleUserMessage = (text) => {
+        // Remove the selected option from options
+        setOptions(prevOptions => prevOptions.filter(option => option !== text));
+
         setMessages((prev) => [...prev, { sender: "user", text }]);
 
         // Add typing indicator
@@ -40,11 +45,9 @@ export default function Chatbot() {
         setTimeout(() => {
             const response = responses[text];
 
-            // Remove typing and add bot response
             setMessages((prev) => {
                 const updated = prev.filter((msg) => msg.sender !== "typing");
 
-                // If it's a WhatsApp link
                 if (response?.type === "link") {
                     window.open(response.url, "_blank");
                 }
@@ -58,8 +61,9 @@ export default function Chatbot() {
     };
 
 
+
     return (
-        <div className="fixed bottom-6 left-1/2 translate-x-[-50%] lg:left-auto lg:right-6 lg:translate-x-0 z-50">
+        <div className=" fixed bottom-6 left-1/2 translate-x-[-50%] lg:left-auto lg:right-6 lg:translate-x-0 z-50">
             {/* Toggle Button */}
             <button
                 onClick={() => setChatOpen(!chatOpen)}
@@ -85,7 +89,7 @@ export default function Chatbot() {
                     </div>
 
                     {/* Unified Chat Area */}
-                    <div className="flex-1 mt-2 overflow-y-auto p-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300 flex flex-col">
+                    <div className="flex-1 mt-2 overflow-y-auto max-h-[440px] p-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300 flex flex-col">
                         {messages.map((msg, index) => (
                             <div
                                 key={index}

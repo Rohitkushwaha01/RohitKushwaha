@@ -5,7 +5,6 @@ import Tabnet from "../assets/Tabnet.png";
 import SheetalEng from "../assets/SheetalEng.png";
 import SocioCode from "../assets/SocioCode.png";
 import TPPL from "../assets/TPPL.svg";
-import MahanAshoksamrat from "../assets/ashokSamrat.svg";
 
 export default function Work() {
   useEffect(() => {
@@ -46,22 +45,21 @@ export default function Work() {
       </div>
 
       {/* Projects */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 sm:px-10 lg:px-20 py-20">
-
+      <div className="flex flex-col lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-20 gap-10 py-20">
         {/* Tabnet */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-[#a092da] to-[#e1e0e4] rounded-3xl overflow-hidden p-6 shadow-xl"
+          className="w-full lg:w-1/2 bg-gradient-to-br from-[#d0c4ff] to-[#e2d9ff] rounded-3xl overflow-hidden p-6 shadow-xl"
         >
           <h1 className="font-acron text-4xl sm:text-5xl lg:text-6xl bg-gradient-to-r from-[#515ED2] to-[#6a11cb] bg-clip-text text-transparent font-bold mb-6">
             Tabnet
           </h1>
           <img src={Tabnet} alt="Tabnet" className="w-full h-auto rounded-2xl" />
           <p className="text-md text-zinc-700 mt-4">
-            • Cpllaborated with tabnet team to build there Product Full Stack Development (Node.js, Express MongoDB, React)<br />
+            • Full Stack Development (Node.js, MongoDB, React)<br />
             • Backend optimization and frontend improvements<br />
             • Scalable solutions
           </p>
@@ -92,31 +90,8 @@ export default function Work() {
             • Enhanced visibility and accessibility
           </p>
           <div className="flex flex-wrap gap-2 mt-4">
-            <span className="bg-yellow-200 text-yellow-800 text-sm px-3 py-1 rounded-full">React.js</span>
-            <span className="bg-blue-200 text-blue-900 text-sm px-3 py-1 rounded-full">Framer Motion</span>
-          </div>
-        </motion.div>
-
-        {/* Sheetal Engineers */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="bg-gradient-to-br from-[#ffcd04] to-[#ffca8e] rounded-3xl overflow-hidden p-6 shadow-xl"
-        >
-          <h1 className="font-acron text-4xl sm:text-5xl lg:text-6xl text-blue-950 font-bold mb-6">
-            Community website
-          </h1>
-          <img src={MahanAshoksamrat} alt="Sheetal Engineers" className="w-full h-auto rounded-2xl" />
-          <p className="text-md text-zinc-700 mt-4">
-            • Designed and built their full business website<br />
-            • Improved branding, navigation, and user experience<br />
-            • Enhanced visibility and accessibility
-          </p>
-          <div className="flex flex-wrap gap-2 mt-4">
-            <span className="bg-yellow-200 text-yellow-800 text-sm px-3 py-1 rounded-full">React.js</span>
-            <span className="bg-blue-200 text-blue-900 text-sm px-3 py-1 rounded-full">Framer Motion</span>
+          <span className="bg-yellow-200 text-yellow-800 text-sm px-3 py-1 rounded-full">React.js</span>
+          <span className="bg-blue-200 text-blue-900 text-sm px-3 py-1 rounded-full">Framer Motion</span>
           </div>
         </motion.div>
       </div>
@@ -149,7 +124,7 @@ export default function Work() {
             <img src={SocioCode} alt="SocioCode" className="w-full rounded-xl" />
           </motion.div>
 
-          {/* TPPX */}
+          {/* TPPL */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -158,7 +133,7 @@ export default function Work() {
             className="bg-[#d1f1ff] rounded-3xl p-6 shadow-md hover:shadow-xl transition duration-300"
           >
             <h3 className="font-acron text-4xl sm:text-5xl text-[#023047] font-bold mb-3">
-              TPPX
+              TPPL
             </h3>
             <p className="text-xl font-semibold text-gray-700 mb-4">
               Mechanical Steel & Fabrication Company
